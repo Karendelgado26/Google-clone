@@ -1,0 +1,218 @@
+body{
+/* Margen predeterminado */
+    margin: 0;
+    /* Margen pa' dentro */
+    padding: 0;
+    /* Tamaño de texto */
+    font-size: 13px;
+    /* Fuente del texto */
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Navegación */
+
+header{
+    /* width-ancho /// height-alto */
+    width: 100%;
+    height: 55px;
+}
+
+header nav{
+    /* Cómo se puede mover el elemento */
+    display: flex;
+    justify-content: flex-end;
+}
+
+header nav .nav-right-section{
+/* Eliminar vinetas */
+list-style: none;
+width: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+/* Altura automática */
+height: auto;
+}
+
+nav .nav-right-section a{
+    /* Color de texto */
+    color:rgb(21, 21, 21);
+    /* Línea debajo de */
+    text-decoration: none;
+    /* Margen derecho */
+    margin-right: 25px;
+}
+
+nav .nav-right-section .menu{
+    background-image: url(https://img.icons8.com/ios-glyphs/90/000000/circled-menu.png);
+width: 20px;
+height: 20px;
+/* Contiene la imagen */
+background-size: contain;
+background-repeat: no-repeat;
+}
+
+nav .nav-right-section img{
+    /* Margin text - margen a la izquierda solamente */
+    margin-left: 20px;
+    /* Redondear imagen */
+    border-radius: 100px;
+    /* width - anchura */
+    width: 35px;
+}
+
+/*************************************************/
+/********************************************/
+/***********************************/
+/* Main */
+
+main{
+    text-align: center;
+    margin-top: 160px;
+}
+
+/* Sección logo */
+main .main-logo{
+    width: 530px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* Logo Google */
+main .main-logo img{
+    height: 100px;
+}
+
+/* Sección input */
+main .main-input{
+    /* width - anchura */
+    width: 550px;
+    /* márgenes y centrado */
+    margin: 0 auto;
+    /* separa input de botones */
+    margin-bottom: 40px;
+}
+
+/* Cajita gris redondeada buscador */
+main .main-input-container{
+/* ancho de linea, estilo y color */
+border: 1px solid #dfe1e5;
+/* Bordes redondeados */
+border-radius: 30px;
+width: 525px;
+/* Mis componentes sean flexibles y se muevan */
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+main .main-input input{
+    height: 40px;
+    width: 430px;
+/* Quitar borde negro */
+    border: none;
+/* Quitar borde azul al hacer click */
+    outline: none;
+}
+
+main .main-input .search-icon{
+    background-image: url(https://seekicon.com/free-icon-download/search_20.svg);
+    background-position: center;
+    width: 15px;
+    height: 15px;
+    /* Icono contenido */
+    background-size: contain;
+    padding-left: 6%;
+    background-repeat: no-repeat;
+}
+
+main .main-input .micro-icon{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    width: 17px;
+    height: 17px;
+/* Icono contenido en el espacio */
+background-size: contain;
+background-position: center;
+padding-left: 1%;
+background-repeat: no-repeat;
+}
+
+main .main-input .cam-icon{
+    background-image: url(https://static.wikia.nocookie.net/logopedia/images/2/2b/Google_Lens_2021.svg);
+    width: 17px;
+    height: 17px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-right: 6%;
+}
+
+main .main-buttons{
+    width: 550px;
+/* Vertical / Horizontal */
+    margin: 0 auto;
+}
+
+main .main-buttons div{
+/* Alinear elementos en la misma linea */
+    display: inline-block;
+}
+
+main .main-buttons button{
+    border: 0;
+    height: 40px;
+    background-color: #f8f9fa;
+    font-size: 14px;
+    color: #3c4043;
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 0 15px;
+}
+
+/* Nos permite agregarle diseño al poner cursor sobre elemento */
+main .main-input-container:hover{
+    box-shadow: 0 0 5px #20212447;
+}
+
+main .main-buttons button:hover{
+    color:#202124;
+/* ancho de linea - estilo de linea - color */
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+/* foooter */
+
+footer{
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer ul{
+    margin: 10px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer .footer-left{
+    justify-content: left;
+}
+
+footer .footer-right{
+    justify-content: right;
+}
+
+footer ul li a{
+    margin: 10px;
+    color: #5f6368;
+}
